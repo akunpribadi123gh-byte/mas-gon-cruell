@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#17051f">
+  <meta name="description" content="Mas Gon Cruell - Joki Game, Stock Akun FF, Produk Digital dan Jasa Post Akun">
+  <title>Mas Gon Cruell — Pusat Layanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="assets/logo-masgon.jpg" alt="Mas Gon Cruell">
+        </div>
+        <div>
+          <h1>Mas Gon Cruell <span>✓</span></h1>
+          <p>Pusat Layanan Mas Gon Cruell</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="ticker">
+      <strong>Beli</strong>
+      <span>•</span>
+      <b>Rp 5.000</b>
+      <span>•</span>
+      <b>Joki Kontak</b>
+      <span>•</span>
+      <span>Online</span>
+    </div>
+
+    <main>
+      <section class="hero">
+        <img class="hero-image" src="assets/banner-masgon.jpg" alt="Mas Gon Cruell">
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <span class="hero-pill">MAS GON CRUELL</span>
+          <h2>Selamat Datang<br>di <em>Mas Gon Cruell</em></h2>
+          <p>Joki game, stock akun FF, produk digital, jasa post akun dan layanan lainnya.</p>
+          <a href="#layanan" class="hero-btn">Lihat Layanan</a>
+        </div>
+      </section>
+
+      <section id="layanan" class="service-grid">
+        <button class="service" onclick="openWA('joki')">
+          <div class="icon">⚔</div>
+          <b>Joki Kontak</b>
+          <small>Mulai Rp 5.000</small>
+        </button>
+
+        <button class="service" onclick="openWA('stock')">
+          <div class="icon">▣</div>
+          <b>Stock Akun FF</b>
+          <small>Cek akun</small>
+        </button>
+
+        <button class="service" onclick="showInfo('Produk Digital')">
+          <div class="icon">◇</div>
+          <b>Produk Digital</b>
+          <small>Lihat produk</small>
+        </button>
+
+        <button class="service" onclick="openWA('joki')">
+          <div class="icon">◉</div>
+          <b>WA Joki</b>
+          <small>Chat joki</small>
+        </button>
+
+        <button class="service" onclick="openWA('stock')">
+          <div class="icon">◉</div>
+          <b>WA Stock</b>
+          <small>Chat stock</small>
+        </button>
+
+        <button class="service" onclick="openWA('jp')">
+          <div class="icon">➤</div>
+          <b>WA JP</b>
+          <small>Jasa post</small>
+        </button>
+
+        <button class="service wide" onclick="openWA('jp')">
+          <div class="icon">📣</div>
+          <b>Jasa Post Akun</b>
+          <small>Promosikan akun kamu</small>
+        </button>
+      </section>
+
+      <section class="section-heading">
+        <span>JASA POST AKUN</span>
+        <h2>Promosikan akun kamu lebih luas.</h2>
+        <p>Klik tombol di bawah untuk langsung menghubungi WhatsApp JP.</p>
+      </section>
+
+      <section class="product-card">
+        <div class="available">TERSEDIA</div>
+        <button class="report" onclick="showInfo('Silakan hubungi WA JP untuk detail dan harga.')">ⓘ Info</button>
+        <h3>Jasa Post / Promosi Akun</h3>
+        <p>Butuh promosi akun? Hubungi Mas Gon Cruell melalui WhatsApp JP untuk detail layanan dan harga.</p>
+        <div class="price">Harga: Hubungi WA JP</div>
+        <button class="buy" onclick="openWA('jp')">Pesan via WhatsApp</button>
+      </section>
+
+      <section class="contact-card">
+        <h2>Kontak WhatsApp</h2>
+        <div class="contact-row">
+          <button onclick="openWA('joki')"><span>WA Joki</span><b>0858-6322-1803</b></button>
+          <button onclick="openWA('stock')"><span>WA Stock</span><b>0831-8278-4205</b></button>
+          <button onclick="openWA('jp')"><span>WA JP</span><b>0831-8278-4382</b></button>
+        </div>
+      </section>
+
+      <section id="tentang" class="info-card">
+        <h2>Tentang Mas Gon Cruell</h2>
+        <p>Layanan joki game, stock akun FF, produk digital dan jasa post akun. Gunakan menu di atas untuk memilih layanan yang kamu butuhkan.</p>
+        <div class="social">@mas_gon_cruell</div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="#layanan"><span>⚔</span><small>Joki</small></a>
+      <a href="#layanan"><span>▣</span><small>Stock FF</small></a>
+      <a href="#" class="home active"><span>⌂</span><small>Home</small></a>
+      <a href="#layanan"><span>◷</span><small>Pesan</small></a>
+      <a href="#tentang"><span>ⓘ</span><small>Tentang</small></a>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
